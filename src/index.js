@@ -4,9 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const words = "Press the button"
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App message={words}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
