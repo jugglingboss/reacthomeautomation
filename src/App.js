@@ -27,8 +27,14 @@ function ShowMessage () {
 }
 
 function AcceptInput () {
+  const [defaultMessage, userMessage] = useState('');
+
+  const printUserMessage = (props) => {
+    console.log('printUserMessage')
+  }
+
   return(
-    <form onSubmit={}>
+    <form onSubmit={printUserMessage}>
       <input
         type="text"
         placeholder="here"
